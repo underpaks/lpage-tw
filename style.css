@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@keyframes float{
+	0%,100%{
+		box-shadow:0 5px 15px 0 rgba(0,0,0,.6);
+		transform:translatey(0)
+	}
+	50%{
+		box-shadow:0 25px 15px 0 rgba(0,0,0,.2);
+		transform:translatey(-20px)
+	}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: rgb(0, 12, 13);
+  background: linear-gradient(
+    31deg,
+    rgba(0, 12, 13, 1) 8%,
+    rgba(0, 23, 23, 1) 45%,
+    rgba(0, 18, 17, 1) 100%
+  );
+}
+
+.headr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.headr-logo {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.headr-nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.headr-menu-item {
+  font-family: "Rubik", sans-serif;
+  color: #fff2e7;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.main {
+  margin-bottom: 48px;
+  border-top: 0.6px solid #5e461e;
+}
+
+.main-section {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-section1-div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.main-section1-h1-title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 68px;
+  background: -webkit-linear-gradient(#9b7636, #3a2c12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-section1-h2-description {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color: #ecd6c4;
+}
+
+.main-buttons {
+  display: flex;
+}
+
+.main-section1-button {
+  margin-right: 20px;
+  background-color: #6c5121;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(0, 12, 13);
+}
+
+.main-section1-button2 {
+  background-color: #094e0c;
+  width: 300px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #10b618;
+}
+
+.main-section1-button:hover {
+  background-color: #553a0d;
+}
+
+.main-section1-img {
+  height: 350px;
+  border-radius: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.two-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.section2-h3-faq-title {
+  border-top: 0.4px solid #5e461e;
+  padding-top: 48px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff2ef;
+  margin-bottom: 16px;
+}
+
+.section2-p-desc {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ecd6c4;
+}
+
+.rodape {
+  padding: 30px;
+  font-family: "Rubik", sans-serif;
+  color: #928670;
+  border-top: 0.4px solid #5e461e;
+}
+
+.rodape-imagem {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
