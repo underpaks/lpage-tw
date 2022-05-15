@@ -68,6 +68,15 @@ body {
   justify-content: space-around;
 }
 
+.section2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
 .main-section1-div {
   display: flex;
   flex-direction: column;
@@ -83,10 +92,38 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.gallery-h1-title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 68px;
+  text-align: center;
+  background: -webkit-linear-gradient(#9b7636, #3a2c12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section2-h1-title {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 68px;
+  text-align: right;
+  background: -webkit-linear-gradient(#9b7636, #3a2c12);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-section1-h2-description {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 22px;
+  color: #ecd6c4;
+}
+
+.section2-h2-description {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: right;
   color: #ecd6c4;
 }
 
@@ -105,12 +142,12 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-size: 24px;
-  color: rgb(0, 12, 13);
+  color: #110d06;
 }
 
 .main-section1-button2 {
   background-color: #094e0c;
-  width: 400px;
+  width: 380px;
   height: 60px;
   border: none;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
@@ -126,6 +163,12 @@ body {
 }
 
 .main-section1-img {
+  height: 300px;
+  border-radius: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.section2-img {
   height: 350px;
   border-radius: 20px;
   animation: float 6s ease-in-out infinite;
