@@ -3,11 +3,11 @@
 
 @keyframes float{
 	0%,100%{
-		box-shadow:0 5px 15px 0 rgba(0,0,0,.6);
+		box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0);
 		transform:translatey(0)
 	}
 	50%{
-		box-shadow:0 25px 15px 0 rgba(0,0,0,.2);
+		box-shadow:0 25px 15px 0 rgba(0, 0, 0, 0);
 		transform:translatey(-20px)
 	}
 }
@@ -20,15 +20,28 @@
 }
 
 body {
+  font-family: Rubik;
   font-size: 100%;
-  background: rgb(0, 12, 13);
-  background: linear-gradient(
-    31deg,
-    rgba(0, 12, 13, 1) 8%,
-    rgba(0, 23, 23, 1) 45%,
-    rgba(0, 18, 17, 1) 100%
-  );
+  height: 100%;
+  background: rgb(9, 0, 15);
+  background-image: 
+  url("https://cdn.discordapp.com/attachments/989225748701249596/992721437850865674/tankionline_typography.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
+
+.section {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
 
 .headr {
   display: flex;
@@ -61,7 +74,7 @@ body {
 }
 
 .main-section {
-  padding: 100px;
+  padding: 130px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,9 +113,11 @@ body {
 
 .main-section1-h1-title {
   font-family: "Rubik";
-  font-weight: 500;
-  font-size: 68px;
-  background: -webkit-linear-gradient(#9b7636, #3a2c12);
+  font-weight: 1000;
+  font-size: 250px;
+  text-align: center;
+  background: rgb(49, 2, 80); /*-webkit-linear-gradient(#9b7636, #3a2c12);*/
+  animation: float 4s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -242,8 +257,8 @@ body {
 .rodape {
   padding: 30px;
   font-family: "Rubik", sans-serif;
-  color: #928670;
-  border-top: 0.4px solid #5e461e;
+  color: rgb(107, 82, 124);;
+  border-top: 0.4px solid rgb(32, 0, 54);
 }
 
 .rodape-imagem {
